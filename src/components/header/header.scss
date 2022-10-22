@@ -1,0 +1,108 @@
+@import "../../scss/mixinResponse";
+
+.container-header {
+    --text-opacity: 1;
+    align-items: center;
+    color: rgb(255 255 255 / var(--text-opacity));
+    display: flex;
+    position: fixed;
+    width: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    top: 0;
+    z-index: 1000000;
+
+    &__opacity {
+        --bg-opacity: 1;
+        background-color: rgb(19 20 25 / var(--bg-opacity));
+        height: 5.5rem;
+    }
+
+    &__not-opacity {
+        --bg-opacity: 1;
+        background-color: rgb(43, 43, 43);
+        height: 4.5rem;
+    }
+
+    &__main {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__icon {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__image-container {
+            &__figure {
+                margin-left: auto;
+                margin-right: auto;
+                display: table;
+
+                &__img {
+                    width: 210px;
+                    height: 60px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        @include desktop {
+            &__desktop {
+                display: block;
+            }
+
+            &__social {
+                display: block;
+            }
+
+            &__mobile {
+                display: none;
+            }
+        }
+
+        @include tablet {
+            &__desktop {
+                display: none;
+            }
+
+            &__image-container {
+                margin: auto;
+            }
+
+            &__social {
+                display: none;
+            }
+
+            &__mobile {
+                display: block;
+            }
+
+        }
+
+        @include mobile {
+            &__desktop {
+                display: none;
+            }
+
+            &__image-container {
+                margin: auto;
+            }
+
+            &__social {
+                display: none;
+            }
+
+            &__mobile {
+                display: block;
+            }
+        }
+    }
+}

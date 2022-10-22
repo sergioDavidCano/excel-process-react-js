@@ -1,0 +1,23 @@
+@import "../scss/mixinResponse";
+
+.container-router {
+    @include desktop {
+        margin: 15px 15px 0 15px;
+    }
+
+    @include tablet {
+        margin: 10px 10px 0 10px;
+    }
+
+    @include mobile {
+        margin: 5px 5px 0 5px;
+    }
+
+    .heightBig {
+        height: calc(100vh - 5.5rem);
+    }
+
+    .heightNoBig {
+        height: calc(100vh - 4.5rem);
+    }
+}

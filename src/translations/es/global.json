@@ -1,0 +1,42 @@
+{
+    "translate": {
+        "lenguage": "Idiomas",
+        "text-info": "Actualmente la aplicación está disponible en estos idiomas.",
+        "spanish": "Español",
+        "english": "Inglés",
+        "Portuguese-from-Brazil": "Portugués de (Brasil)",
+        "frances": "Francés"
+    },
+    "navbar": {
+        "get-out": "Salir",
+        "react-saga-text": "Prueba react-saga",
+        "spanish": "Español",
+        "english": "Ingles"
+    },
+    "calendary": {
+        "all-day": "Todo el día",
+        "previous": "Atras",
+        "next": "Siguiente",
+        "today": "Hoy",
+        "month": "Mes",
+        "week": "Semana",
+        "day": "Día",
+        "agenda": "Agenda",
+        "date": "Fecha",
+        "time": "Hora",
+        "event": "Evento",
+        "no-events-in-range": "No hay eventos en este rango"
+    },
+    "calendary-modal": {
+        "edit-event": "Editar evento",
+        "new-event": "Nuevo evento",
+        "date-and-time": "Fecha y hora inicio",
+        "end-date-and-time": "Fecha y hora fin",
+        "title-and-notes": "Titulo y notas",
+        "a-short-description": "Una descripción corta",
+        "additional-information": "Información adicional",
+        "save": "Guardar",
+        "event-title": "Titulo del evento",
+        "notes": "Notas"
+    }
+}

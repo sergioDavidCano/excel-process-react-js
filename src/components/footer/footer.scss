@@ -1,0 +1,75 @@
+@import "../../styles/base/mixinResponse";
+
+.container-main-footer {
+    --bg-opacity: 1;
+    background-color: rgb(19 20 25 / var(--bg-opacity));
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .container-sub-main-footer {
+        margin-left: auto;
+        margin-right: auto;
+
+        .container-social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            @include desktop {
+                --space-y-reverse: 0;
+                flex-direction: row;
+                margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
+                margin-bottom: calc(0px * var(--space-y-reverse));
+            }
+            .wp-block-image {
+
+                .figure-img {
+                    margin-bottom: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: table;
+    
+                    img {
+                        width: 210px;
+                        height: 60px;
+                        max-width: 100%;
+                    }
+                }
+    
+            }
+        }
+
+        .container-sub-social {
+            display: flex;
+
+            .social-redirect {
+                --text-opacity: 1;
+                color: rgb(172 107 52 / var(--text-opacity));
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        .container-sub-social> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            align-items: center;
+            justify-content: center;
+            margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+            margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+    }
+
+    .parrafo {
+        --text-opacity: 1;
+        color: rgb(135 142 153 / var(--text-opacity));
+        font-size: 15px;
+        opacity: 0.8;
+    }
+
+    .container-social> :not([hidden])~ :not([hidden]) {
+        --space-y-reverse: 0;
+        margin-top: calc(1.5rem * calc(1 - var(--space-y-reverse)));
+        margin-bottom: calc(1.5rem * var(--space-y-reverse));
+    }
+}

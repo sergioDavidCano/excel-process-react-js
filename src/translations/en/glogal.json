@@ -1,0 +1,42 @@
+{
+    "translate": {
+        "lenguage": "Language",
+        "text-info": "Currently the application is available in these languages.",
+        "spanish": "Spanish",
+        "english": "English",
+        "Portuguese-from-Brazil": "Portuguese from (Brazil)",
+        "frances": "Frances"
+    },
+    "navbar": {
+        "get-out": "Get out",
+        "react-saga-text": "React-saga text",
+        "spanish": "Spanish",
+        "english": "English"
+    },
+    "calendary": {
+        "all-day": "All day",
+        "previous": "Previous",
+        "next": "Next",
+        "today": "Today",
+        "month": "Month",
+        "week": "Week",
+        "day": "Day",
+        "agenda": "Agenda",
+        "date": "Date",
+        "time": "Time",
+        "event": "Event",
+        "no-events-in-range": "No events in range"
+    },
+    "calendary-modal": {
+        "edit-event": "Edit event",
+        "new-event": "New event",
+        "date-and-time": "Date and time",
+        "end-date-and-time": "End date and time",
+        "title-and-notes": "Title and notes",
+        "a-short-description": "A short description",
+        "additional-information": "Additional information",
+        "save": "Save",
+        "event-title": "Event title",
+        "notes": "Notes"
+    }
+}

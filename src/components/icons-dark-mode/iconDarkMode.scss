@@ -1,0 +1,44 @@
+.container-sub-icon {
+    display: flex;
+}
+
+.night-light-label {
+    display: block;
+    margin: 20px 0;
+    height: 31px;
+    width: 60px;
+    border: 2px solid #4672fe;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+
+    #night-light-checkbox {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked+.night-light-ball {
+            transform: translateX(28px);
+        }
+    }
+
+    .night-light-ball {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 1px;
+        left: 1px;
+        border-radius: 50%;
+        background: #4672fe;
+        z-index: 99;
+        transition: 300ms;
+    }
+}
+
+.icon-mode {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+    &.active-mode {
+        display: block;
+    }
+}

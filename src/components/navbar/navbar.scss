@@ -1,0 +1,38 @@
+.navbar-desktop {
+    &__ul {
+        display: flex;
+        font-size: 15px;
+        margin-bottom: 0;
+
+        &__li {
+            --text-opacity: 1;
+            color: rgb(255 255 255 / var(--text-opacity));
+            font-family: 'Work Sans';
+            line-height: 1.5rem;
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0;
+
+            &__redirect {
+                color: #ffffff;
+                text-decoration: inherit;
+
+                &:hover {
+                    --text-opacity: 1;
+                    color: #a7a7a7;
+                    cursor: pointer;
+                }
+            }
+
+            &__select {
+                color: rgb(172 107 52);
+            }
+        }
+    }
+
+    &__ul> :not([hidden])~ :not([hidden]) {
+        --space-x-reverse: 0;
+        margin-right: calc(2rem * var(--space-x-reverse));
+        margin-left: calc(2rem * calc(1 - var(--space-x-reverse)));
+    }
+}
