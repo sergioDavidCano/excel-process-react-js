@@ -5,12 +5,12 @@ export const navigation = [
     redirect: '/history-view'
   },
   {
-    name: 'Procesar excel',
-    redirect: '/myths',
+    name: 'Importar excel',
+    redirect: '/excelImport',
   },
   {
-    name: 'Convertir en excel',
-    redirect: '/mmmm',
+    name: 'Exportar en excel',
+    redirect: '/excelExport',
   },
   {
     name: 'Acerca de',

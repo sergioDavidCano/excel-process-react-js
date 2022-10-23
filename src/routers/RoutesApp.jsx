@@ -1,6 +1,8 @@
 import './routesApp.scss';
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
+import { ImportExcel } from '../pages/import-excel/ImportExcel';
+import { ExportExcel } from '../pages/export-excel/ExportExcel';
 
 export const RoutesApp = () => {
     const [bg, setBg] = useState(false);
@@ -17,12 +19,12 @@ export const RoutesApp = () => {
                     element={<h1>Hol1</h1>}
                 />
                 <Route
-                    path='/:category/:id'
-                    element={<h1>Hol1</h1>}
+                    path='/excelExport'
+                    element={<ExportExcel />}
                 />
                 <Route
-                    path='/:category'
-                    element={<h1>Hol1</h1>}
+                    path='/excelImport'
+                    element={<ImportExcel />}
                 />
                 <Route
                     path='/'
